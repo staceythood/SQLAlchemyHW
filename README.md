@@ -14,6 +14,7 @@ SQL Alchemy Homework
 * Loaded the query results into a Pandas DataFrame
 * Plotted the results using the DataFrame plot method.
 
+
 ### Station Analysis
 
 * Designed a query to calculate the total number of stations.
@@ -24,9 +25,9 @@ SQL Alchemy Homework
 
 ## Step 2 - Climate App
 
-Designed a Flask API based on the queries that I developed.
+Designed a Flask API based on the queries above.
 
-* Used FLASK to create the following routes.
+* Used FLASK to create the following routes:
 
 ### Routes
 
@@ -34,26 +35,18 @@ Designed a Flask API based on the queries that I developed.
 
   * Home page.
 
-  * List all routes that are available.
-
 * `/api/v1.0/precipitation`
 
-  * Convert the query results to a Dictionary using `date` as the key and `prcp` as the value.
-
-  * Return the JSON representation of your dictionary.
+  * Returns the JSON representation of the last 12 months of precipitation for the most active station.
 
 * `/api/v1.0/stations`
 
-  * Return a JSON list of stations from the dataset.
+  * Returns a JSON list of stations from the dataset.
 
 * `/api/v1.0/tobs`
-  * query for the dates and temperature observations from a year from the last data point.
-  * Return a JSON list of Temperature Observations (tobs) for the previous year.
+  
+  * Returns a JSON list of Temperature Observations (tobs) for the previous year.
 
 * `/api/v1.0/<start>` and `/api/v1.0/<start>/<end>`
 
-  * Return a JSON list of the minimum temperature, the average temperature, and the max temperature for a given start or start-end range.
-
-  * When given the start only, calculate `TMIN`, `TAVG`, and `TMAX` for all dates greater than and equal to the start date.
-
-  * When given the start and the end date, calculate the `TMIN`, `TAVG`, and `TMAX` for dates between the start and end date inclusive.
+  * Returns a JSON list of the minimum temperature, the average temperature, and the max temperature for a given start or start-end range.
