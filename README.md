@@ -1,4 +1,4 @@
-# SQL Alchemy Homework
+# Surfs Up! Hawaii Climate Analysis with SQL Alchemy
 
 
 ## Step 1 - Climate Analysis and Exploration
@@ -21,7 +21,7 @@
 * Designed a query to find the most active stations, listed the stations and counts in descending order.
   * Station USC00519281 has the highest number of observations
 
-* Designed a query to retrieve the last 12 months of temperature observation data (tobs) for the stationwith the highest number of observations and plotted the results as a histogram with `bins=12`.
+* Designed a query to retrieve the last 12 months of temperature observation data (tobs) for the station with the highest number of observations and plotted the results as a histogram with `bins=12`.
 
 ## Step 2 - Climate App
 
